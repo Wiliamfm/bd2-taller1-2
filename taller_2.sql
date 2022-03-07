@@ -111,7 +111,7 @@ $$
 		insert into auditory.product_audit 
 			(title, category, photos, rate, brand, vendor_name, datetime, event_type)
 		values 
-			(new.title, product_category, new.photos, new.rate, product_brand, product_supplier, now(), 3);
+			(old.title, product_category, old.photos, old.rate, product_brand, product_supplier, now(), 3);
 		return old;
 	end if;	
 	
@@ -169,7 +169,7 @@ $$
 		insert into auditory.variant_audit 
 			(price, stock, characteristics, product, datetime, event_type)
 		values 
-			(new.price, new.stock, new.charact, variant_product, now(), 3);
+			(old.price, old.stock, old.charact, variant_product, now(), 3);
 		return old;
 	end if;	
 	
