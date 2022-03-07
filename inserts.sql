@@ -127,6 +127,8 @@ values (4, 99.900, 2, 'variant example 4', 1);
 insert into variant
 values (5, 99.900, 2, 'variant example 5', 1);
 
+select * from variant;
+
 select * from auditory.variant_audit;
 
 insert into shopping_cart
