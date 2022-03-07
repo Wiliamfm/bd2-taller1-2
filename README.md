@@ -8,3 +8,5 @@
   - file with the 2 point.
 - point3.sql
   - file with the 3 point
+## Video link:
+- https://youtu.be/kS_TzIRwM3I
